@@ -1,0 +1,109 @@
+/* .heros{ 
+    background: #00b052;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #96c93d, #00b09b); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* } */
+
+.herobg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hamburger span {
+  transition: all 0.3s ease;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Ensure body and html take full height */
+/* html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional fix to ensure the web component stretches */
+/* dotlottie-wc {
+  display: block;
+} */ 
+
+/* navbar animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out forwards;
+}
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slide-up {
+  animation: slide-up 1s ease-in-out forwards;
+}
+
+/* custom animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1.5s ease-in-out forwards;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-in-out forwards;
+}
+
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  .animate-fade-in-left {
+    animation: fadeInLeft 1.2s ease-out both;
+  }
+  .animate-fade-in-right {
+    animation: fadeInRight 1.2s ease-out both;
+  }
